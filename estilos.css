@@ -1,9 +1,4 @@
-
-body {
-  padding: 40px;
-  background-color: #f8f9fa;
-  color: #000;
-}
+  
 
 h1 {
   text-align: center;
@@ -144,4 +139,13 @@ em {
     padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
+  }
+
+  
+  .descricao {
+    font-size: 1.1rem;
+  }
+
+  .card-body {
+    padding: 2rem;
   }
