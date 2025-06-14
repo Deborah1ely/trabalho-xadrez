@@ -5,172 +5,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Chess - Movimento das peças</title>
     <link rel="stylesheet" href="estilos.css">
+    <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+                crossorigin="anonymous"
+        />
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Play Chess</a>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_movimento_pecas.html">Movimentos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_dica.html">Dicas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_curiosidades.html">Curiosidades</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Play Chess</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_movimento_pecas.html">Movimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_dica.html">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_curiosidades.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
     <p></p>
     <br>
     <h1>Movimento das peças</h1>
 
-    <h2>Peão</h2>
-    <h3>O peão anda só pra frente, uma casa por vez — mas, na sua primeira jogada, pode avançar duas casas. Para capturar, ele só ataca nas casas diagonais na frente dele, uma casa para a esquerda ou direita.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_peao.gif" alt="Perfil" width="200">
-    </center>
-    <h3>Uma característica importante sobre o peão é que quando ele chega na última casa do tabuleiro adversário ele pode ser promovido, sendo substituído por cavalo, bispo, torre ou rainha.</h3> 
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_peao_promocao.gif" alt="Perfil" width="200">
-    </center>
+<div class="container py-4">
 
-    <h2>Cavalo</h2>
-    <h3>O cavalo anda em “L”: duas casas numa direção e uma para o lado. Além disso, é o único que pode pular sobre outras peças! Captura quando cai na casa do inimigo.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_cavalo.gif" alt="Perfil" width="200">
-    </center>
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Peão</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_peao.gif" class="img-fluid rounded" >
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O peão anda só pra frente, uma casa por vez — mas, na sua primeira jogada, pode avançar duas casas. Para capturar, ele só ataca nas casas diagonais na frente dele, uma casa para a esquerda ou direita.</p>
+       </div>
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_peao_promocao.gif" class="img-fluid rounded mt-2" >
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Quando chega à última casa do tabuleiro adversário, ele pode ser promovido, substituindo-se por cavalo, bispo, torre ou rainha.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Bispo</h2>
-    <h3>O bispo se move quantas casas quiser pelas diagonais, e captura do mesmo jeito: parando na casa da peça inimiga. Existe o bispo que só anda pela casa branca e outro só pela casa preta.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_bispo.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Cavalo -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Cavalo</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_cavalo.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O cavalo anda em “L”: duas casas numa direção e uma para o lado. É o único que pode pular sobre outras peças!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Torre</h2>
-    <h3>A torre se move quantas casas quiser só na horizontal (filas) ou vertical (colunas). Para capturar, é só parar na casa do adversário.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_torre.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Bispo -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Bispo</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_bispo.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O bispo se move pelas diagonais e captura do mesmo jeito. Um bispo anda só pelas casas brancas e outro só pelas pretas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Dama</h2>
-    <h3>A dama pode andar quantas casas quiser em linha reta: para frente, trás, lados e diagonais — mas nunca em “L”. Ela captura a peça inimiga parando na casa dela.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_rainha.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Torre -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Torre</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_torre.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>A torre se move quantas casas quiser na horizontal ou vertical, capturando ao parar na casa da peça inimiga.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Rei</h2>
-    <h3>A peça mais importante do jogo! O rei anda uma casa por vez em qualquer direção — para frente, trás, lado ou diagonal. Ele captura a peça adversária se ela estiver numa casa ao redor dele.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/movimento_rei.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Dama -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Dama</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_rainha.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>A dama anda quantas casas quiser em linha reta — frente, trás, lados e diagonais — mas não em “L”.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <hr><h1>Conceitos</h1>
+  <!-- Rei -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Rei</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/movimento_rei.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O rei anda uma casa por vez em qualquer direção. É a peça mais importante: se for capturado, o jogo acaba.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Xeque</h2>
-    <h3>Quando o rei está ameaçado por qualquer peça adversária, dizemos que ele está em "xeque". </h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/xeque.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Xeque -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Xeque</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/xeque.gif" class="img-fluid rounded" >
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Quando o rei está ameaçado por uma peça inimiga, dizemos que ele está em "xeque".</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Xeque-mate</h2>
-    <h3>O xeque-mate é o ponto final de uma partida. Se o rei está em xeque e não existem casas para o rei ocupar que não estejam ameaçadas, então o rei está em "xeque-mate".</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/xeque_mate.gif" alt="Perfil" width="200">
-    </center>
-    
-    <h2>En Passant</h2>
-    <h3>Quando um peão em sua casa de origem anda duas casas e fica ao lado de um peão adversário, este pode capturá-lo como se houvesse simplesmente andado uma casa.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/en_passant.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Xeque-mate -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Xeque-mate</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/xeque_mate.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Se o rei está em xeque e não pode escapar, temos um "xeque-mate": fim de jogo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Roque</h2>
-    <h3>O roque é realizado com uma das torres e o rei. Para a realização do roque é importante observar que só é possível executá-lo quando:</h3>
-    <ul>
-        <li>O rei e a torre do lado escolhido para o roque não foram movimentados.</li>
-        <li>Não houver peças entre o rei e a torre.</li>
-        <li>O rei não estiver em xeque.</li>
-        <li>As casas em que o rei passar não estiverem ameaçadas.</li>
-        <li>O rei, ao rocar, não terminar em xeque.</li>
-    </ul>
-    <h3>O roque é feito da seguinte maneira: </h3>
-    <ul>
-        <li>O rei anda duas casas em direção à torre.</li>
-        <li>A torre pula o rei e ocupa a casa ao lado do rei.</li>
-    </ul>
-    <center>
-        <img src="gifs_pag_movimento_pecas/roque.gif" alt="Perfil" width="200">
-    </center>
+  <!-- En Passant -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">En Passant</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/en_passant.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Se um peão avança duas casas e para ao lado de um peão adversário, este pode capturá-lo como se tivesse andado uma só.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <h2>Rei afogado</h2>
-    <h3>Quando o rei não está em xeque e as casas que o cercam estão ameaçadas, a partida está empatada pois o rei está "afogado".</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/afogamento.gif" alt="Perfil" width="200">
-    </center>
+<div class="container py-4">
+    <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Roque</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="gifs_pag_movimento_pecas/roque.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O roque é realizado com uma das torres e o rei. Para executá-lo, é necessário que:</p>
+          <ul>
+            <li>O rei e a torre não tenham se movido.</li>
+            <li>Não haja peças entre rei e torre.</li>
+            <li>O rei não esteja em xeque.</li>
+            <li>As casas por onde o rei passa não estejam ameaçadas.</li>
+            <li>O rei não termine em xeque.</li>
+          </ul>
+          <p>Durante o roque:</p>
+          <ul>
+            <li>O rei anda duas casas em direção à torre.</li>
+            <li>A torre pula o rei e para ao lado dele.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Ataque Duplo</h2>
-    <h3>Este é um dos temas que acontecem com muita frequência nas partidas de xadrez. "Ataque duplo" é a denominação dada a um ataque a duas peças adversárias por uma peça de menor valor.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/ataque_duplo.gif" alt="Perfil" width="200">
-        <p>A dama ataca o bispo e ameaça xeque-mate ao mesmo tempo.</p>
-    </center>
+  <!-- Rei afogado -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Rei afogado</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="gifs_pag_movimento_pecas/afogamento.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Quando o rei não está em xeque, mas todas as casas ao seu redor estão ameaçadas, o jogo termina empatado. Dizemos que o rei está "afogado".</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h2>Garfo</h2>
-    <h3>Um garfo é uma tática no xadrez em que uma única peça ataca duas ou mais peças ao mesmo tempo.</h3>
-    <center>
-        <img src="gifs_pag_movimento_pecas/garfo.gif" alt="Perfil" width="200">
-    </center>
+  <!-- Ataque Duplo -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Ataque Duplo</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="gifs_pag_movimento_pecas/ataque_duplo.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>Um ataque duplo ocorre quando uma peça ataca duas peças adversárias ao mesmo tempo, normalmente sendo uma peça de menor valor.</p>
+          <p class="mt-2">Exemplo: a dama ataca o bispo e ameaça xeque-mate simultaneamente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <hr>
-<h1>Valores comparativo das peças</h1>
-<h3>Atribuiu-se às peças um valor numérico:</h3>
+  <!-- Garfo -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Garfo</h4>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="gifs_pag_movimento_pecas/garfo.gif" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8 descricao">
+          <p>O garfo é uma tática em que uma única peça ataca duas ou mais peças adversárias ao mesmo tempo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<center>
-<table border="1">
-  <thead>
-    <tr>
-      <th>Peça</th>
-      <th>Valor</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dama</td>
-      <td>9 pontos</td>
-    </tr>
-    <tr>
-      <td>Torre</td>
-      <td>5 pontos</td>
-    </tr>
-    <tr>
-      <td>Bispo</td>
-      <td>3 pontos</td>
-    </tr>
-    <tr>
-      <td>Cavalo</td>
-      <td>3 pontos</td>
-    </tr>
-    <tr>
-      <td>Peão</td>
-      <td>1 ponto</td>
-    </tr>
-  </tbody>
-</table>
-</center>
-<center>
-<p>Estes valores não são absolutos e se utilizam como referencial para as trocas.</p>
-</center>   
+  <!-- Valores comparativos -->
+  <div class="card mb-4 shadow">
+  <div class="card-body">
+    <h4 class="verde_texto text-start">Valores comparativo das peças</h4>
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <table class="table table-bordered text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Peça</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dama</td>
+              <td>9 pontos</td>
+            </tr>
+            <tr>
+              <td>Torre</td>
+              <td>5 pontos</td>
+            </tr>
+            <tr>
+              <td>Bispo</td>
+              <td>3 pontos</td>
+            </tr>
+            <tr>
+              <td>Cavalo</td>
+              <td>3 pontos</td>
+            </tr>
+            <tr>
+              <td>Peão</td>
+              <td>1 ponto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-7 descricao">
+        <p>Estes valores não são absolutos, mas servem como referência para avaliar trocas durante a partida. A dama é a peça mais valiosa em termos de mobilidade e poder de ataque, enquanto o peão, embora seja a peça de menor valor, pode se tornar decisivo com uma promoção bem executada.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<hr><h1>Controle de tempo</h1>
-<h3>Os controles de tempo referem-se a quanto tempo cada jogador recebe para completar uma partida. Eles podem ser simples ou complexos. Os controles de tempo clássicos geralmente se referem a controles de tempo mais longos e geralmente são usados para torneios presenciais.</h3>
+  <!-- Controle de tempo -->
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h4 class="verde_texto text-start">Controle de tempo</h4>
+      <div class="descricao">
+        <p>Os controles de tempo determinam quanto tempo cada jogador tem para completar uma partida. Eles podem ser simples ou mais complexos, como incrementos e delays.</p>
+        <p>Controles clássicos são mais longos e geralmente usados em torneios presenciais.</p>
+      </div>
+    </div>
+  </div>
 
+    <!-- Notação de Xadrez -->
+    <div class="card mb-4 shadow">
+    <div class="card-body">
+        <h4 class="verde_texto text-start">Notação de Xadrez</h4>
+        <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="imagens_pag_movimento_pecas/notacao_xadrez.png" class="img-fluid rounded" alt="Notação de Xadrez">
+        </div>
+        <div class="col-md-8 descricao">
+            <p>
+            A forma mais comum e simples de notação de xadrez é chamada de <strong>Notação Algébrica</strong>. Ela utiliza letras e números para indicar as casas do tabuleiro.
+            </p>
+            <ul>
+            <li>A linha 1 é a borda do tabuleiro onde as <strong>brancas</strong> começam.</li>
+            <li>As <strong>pretas</strong> começam na linha 8.</li>
+            <li>As colunas vão da letra <strong>a</strong> até <strong>h</strong>, da esquerda para a direita.</li>
+            </ul>
+            <p><strong>Letras usadas para representar peças:</strong></p>
+            <ul>
+            <li><strong>R</strong>: Rei</li>
+            <li><strong>D</strong>: Dama</li>
+            <li><strong>T</strong>: Torre</li>
+            <li><strong>B</strong>: Bispo</li>
+            <li><strong>C</strong>: Cavalo</li>
+            <li><strong>P</strong>: Peão (geralmente omitido)</li>
+            </ul>
+            <p>
+            Para anotar um lance, use o nome da peça seguido da casa de destino. Para capturas, adicione "x" antes da casa. Exemplo: <strong>Txf7</strong>.
+            </p>
+            <p><strong>Símbolos especiais:</strong></p>
+            <ul>
+            <li><strong>0-0</strong>: Roque na ala do Rei</li>
+            <li><strong>0-0-0</strong>: Roque na ala da Dama</li>
+            <li><strong>+</strong>: Xeque</li>
+            <li><strong>#</strong>: Xeque-mate</li>
+            <li><strong>!</strong>: Lance bom</li>
+            <li><strong>?</strong>: Lance ruim</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
 <footer>
       <br>
       <p class="roda">
@@ -179,6 +365,10 @@
       </p>
     </footer>
 
-
+<script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"
+    ></script> 
 </body>
 </html>
