@@ -13,109 +13,92 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Play Chess</a>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_movimento_pecas.html">Movimentos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_dica.html">Dicas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pagina_curiosidades.html">Curiosidades</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-    </header>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Play Chess</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_movimento_pecas.html">Movimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_dica.html">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_curiosidades.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container my-5">
+    <h1 class="mb-4 text-center">Dicas essenciais sobre xadrez</h1>
+
     <p></p>
     <br>
-    <h1>Dicas essenciais sobre xadrez</h1>
-        <!-- Dicas para Iniciantes -->
-    <div class="container py-4">
-        <div class="card mb-4 shadow">
-        <div class="card-body">
-            <div class="row align-items-center">
-            <div class="col descricao">
-                <p class="fs-5">
-                Antes de se preocupar com grandes estratégias ou nomes complicados de aberturas, é essencial aprender e praticar bons hábitos no tabuleiro. 
-                Pequenas atitudes fazem grande diferença, especialmente para quem está começando.
-                </p>
-                <p class="fs-5">
-                Aqui vão algumas dicas valiosas para evoluir com segurança e inteligência no jogo:
-                </p>
-            </div>
-            </div>
-        </div>
-        </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <p class="fs-5">Antes de se preocupar com grandes estratégias ou nomes complicados de aberturas, é essencial aprender e praticar bons hábitos no tabuleiro. Pequenas atitudes fazem grande diferença, especialmente para quem está começando.</p>
+        <p class="fs-5">Aqui vão algumas dicas valiosas para evoluir com segurança e inteligência no jogo:</p>
+      </div>
     </div>
 
-    <ul>
-        <li><strong>Dica 1: Toquei, joguei!</strong><br>
-            Nunca toque em uma peça se não for movê-la. Se encostar, é obrigado a jogar com ela.</li><br>
+    <!-- Lista de Dicas -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 1: Toquei, joguei!</h5><p class="card-text">Nunca toque em uma peça se não for movê-la. Se encostar, é obrigado a jogar com ela.</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 2: Domine o centro</h5><p class="card-text">Casas centrais (d4, d5, e4, e5) dão controle e liberdade para suas peças.</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 3: Roque cedo e com segurança</h5><p class="card-text">Fazer o roque o quanto antes é essencial para proteger o rei e conectar as torres.</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 4: Desenvolva com inteligência</h5><p class="card-text">Comece com peão de e4 ou d4. Traga os cavalos antes dos bispos e evite mover a mesma peça duas vezes na abertura.</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 5: Cuidado com trocas</h5><p class="card-text">Não troque peças sem pensar no valor e no posicionamento final.</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 6: Não traga a dama cedo</h5><p class="card-text">Ela é poderosa, mas virar alvo no início pode te atrapalhar.</p></div></div></div>
+      <<div class="col-md-6 mx-auto"><div class="card h-100"><div class="card-body"><h5 class="card-title">Dica 7: Pense no lance do adversário</h5><p class="card-text">Sempre reflita: “O que meu oponente pode fazer depois disso?”</p></div></div></div>
+</div>
 
-        <li><strong>Dica 2: Domine o centro</strong><br>
-            Casas centrais (d4, d5, e4, e5) dão controle e liberdade para suas peças.</li><br>
-
-        <li><strong>Dica 3: Roque cedo e com segurança</strong><br>
-            Fazer o roque o quando antes é essencial para proteger o rei e conectar as torres. Evite mexer nos peões que o protegem depois disso.</li><br>
-
-        <li><strong>Dica 4: Desenvolva com inteligência</strong><br>
-            Comece com peão de e4 ou d4. Traga os cavalos antes dos bispos e evite mover a mesma peça duas vezes na abertura.</li><br>
-
-        <li><strong>Dica 5: Cuidado com trocas</strong><br>
-            Não troque peças sem pensar no valor e no posicionamento final.</li><br>
-
-        <li><strong>Dica 6: Não traga a dama cedo</strong><br>
-            Ela é poderosa, mas virar alvo no início pode te atrapalhar.</li><br>
-
-        <li><strong>Dica 7: Pense no lance do adversário</strong><br>
-            Sempre reflita: “O que meu oponente pode fazer depois disso?”</li>
-    </ul>
-
-    <h1>Recomendações</h1>
-
-    <h2>Sites para praticar xadrez</h2>
-        <div class="site-container no-card">
-            <a href="https://www.chess.com/pt-BR" target="_blank" rel="noopener">
-                <img src="imagens_pag_dica/chess.com.png" alt="Chess.com - Guia e dicas para iniciantes" />
-            </a>
-            <a href="https://lichess.org/" target="_blank" rel="noopener">
-                <img src="imagens_pag_dica/lichess.png" alt="Lichess - Guia e dicas para iniciantes" />
-            </a>
-            </div>
-
-    <h2>Canais do YouTube sobre xadrez</h2>
-        <div style="text-align: center;">
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 20px;">
-                <a href="https://www.youtube.com/c/ChessNetwork" target="_blank" rel="noopener">
-                    <img src="imagens_pag_dica/chess_network.png" alt="ChessNetwork" width="500" />
-                </a><br />
-                <a href="https://www.youtube.com/c/ChessNetwork" target="_blank" rel="noopener">ChessNetwork</a>
-            </li>
-            <li style="margin-bottom: 20px;">
-                <a href="https://www.youtube.com/c/GMHikaru" target="_blank" rel="noopener">
-                    <img src="imagens_pag_dica/hikaru.png" alt="GM Hikaru" width="500" />
-                </a><br />
-                <a href="https://www.youtube.com/c/GMHikaru" target="_blank" rel="noopener">GM Hikaru</a>
-            </li>
-            <li style="margin-bottom: 20px;">
-                <a href="https://www.youtube.com/@chesswebsite" target="_blank" rel="noopener">
-                    <img src="imagens_pag_dica/chess_website.png" alt="The Chess Website" width="500" />
-                </a><br />
-                <a href="https://www.youtube.com/@chesswebsite" target="_blank" rel="noopener">The Chess Website</a>
-            </li>
-        </ul>
+    <!-- Recomendações -->
+    <h2 class="mt-5">Sites para praticar xadrez</h2>
+    <div class="row text-center">
+    <div class="col-md-6 mb-3">
+    <a href="https://www.chess.com/pt-BR" target="_blank">
+        <img src="imagens_pag_dica/chess.com.png" class="img-fluid w-50" alt="Chess.com">
+    </a>
+    </div>
+    <div class="col-md-6 mb-3">
+    <a href="https://lichess.org/" target="_blank">
+        <img src="imagens_pag_dica/lichess.png" class="img-fluid w-25" alt="Lichess">
+    </a>
+    </div>
     </div>
 
+    <h2 class="mt-5">Canais do YouTube sobre xadrez</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <a href="https://www.youtube.com/c/ChessNetwork" target="_blank">
+          <img src="imagens_pag_dica/chess_network.png" class="img-fluid mb-2" alt="ChessNetwork" />
+          <p>ChessNetwork</p>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="https://www.youtube.com/c/GMHikaru" target="_blank">
+          <img src="imagens_pag_dica/hikaru.png" class="img-fluid mb-2" alt="GM Hikaru" />
+          <p>GM Hikaru</p>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="https://www.youtube.com/@chesswebsite" target="_blank">
+          <img src="imagens_pag_dica/chess_website.png" class="img-fluid mb-2" alt="The Chess Website" />
+          <p>The Chess Website</p>
+        </a>
+      </div>
+    </div>
 
-   <h2>Filmes e séries sobre xadrez</h2>
+ <h2>Filmes e séries sobre xadrez</h2>
     <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 30px; text-align: center;">
             <img src="imagens_pag_dica/rainha_katwe.png" alt="Rainha de Katwe" width="200"><br>
@@ -133,6 +116,7 @@
             Disponível no: Amazon Prime Video
         </li>
     </ul>
+
 
     <footer>
       <br>
