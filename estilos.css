@@ -149,3 +149,13 @@ em {
   .card-body {
     padding: 2rem;
   }
+
+
+  
+
+  
+  .navbar-brand img {
+    max-height: 180px;
+    height: auto;
+    width: auto;
+  }
